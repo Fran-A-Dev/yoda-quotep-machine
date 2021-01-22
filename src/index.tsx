@@ -1,17 +1,23 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import QuoteApp from './QuoteApp';
+import * as serviceWorkers from './serviceWorkers';
 
+const randomQuotes: string[] = [
+    
+    "Fear is the path to the dark side.  Fear leads to Anger... Anger leads to hate. Hate leads to ..suffering",
+    "Much Fear I sense in You",
+    "Feel the Force",
+    "Size Matters Not",
+    "The Dark Side Clouds Everything",
+    "Powerful You Have Become.  The Dark Side I Sense In You"
+]
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <QuoteApp quotes={randomQuotes}/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+serviceWorkers.unregister();
