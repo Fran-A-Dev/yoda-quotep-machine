@@ -7,7 +7,7 @@ import * as serviceWorkers from './serviceWorkers';
 
 const randomQuotes: string[] = [
     
-    "Fear is the path to the dark side.  Fear leads to Anger... Anger leads to hate. Hate leads to ..suffering",
+    "Interesting This Is..hmmm",
     "Much Fear I sense in You",
     "Feel the Force",
     "Size Matters Not",
